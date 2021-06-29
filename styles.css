@@ -5,38 +5,69 @@
 
 }
 
+.navbar {
+  background-color: #4F80FF !important;
+}
+
 a.navbar-brand.p {
   color: #FF006F !important;
 
 }
 
+a.nav-link {
+  font-family: "Arial Rounded MT Bold", "Helvetica Rounded", Arial, sans-serif;
+  font-size: 24px;
+  color: white !important;
+}
+
+
 .nav-link:hover {
-  color: #FF006F !important;
+  color: #460273 !important;
 }
 
 #banner {
 
-  height: 69.5vh;
+  height: 655px;
   overflow: hidden;
-  
-  background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 200%)
+  background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 200%);
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
 }
+
+@media (max-width: 375px) { #banner{
+  height: 590px !important;
+  } }
+  @media (max-width: 320px) { #banner{
+    height: 550px  !important;
+    } }
+ 
+    @media (max-width: 212px) { #banner{
+      height: 580px  !important;
+      } }
+.wrapper {
+  display: inline-flex;
+
+}
+
 
 .titulo-banner {
   color: white;
-  font-size: 59px;
-  margin-top: 200px;
-  width: 100%;
+  font-size: 40px;
 
-  margin-left: auto;
-  margin-right: auto;
-  font-family: 'Roboto', sans-serif;
+
+
+
+  font: 59px 'Gilroy', sans-serif;
+
 
   text-align: center;
-  font-weight: 600;
-  display: inline-block;
-  animation: movetop 1s ease-out;
+  font-weight: bolder;
+
 }
+
+
+
 
 .padre {
   display: flex;
@@ -49,7 +80,7 @@ video {
   top: 0;
   left: 0;
   width: 100%;
-  height: 77vh;
+  height: 76.5vh;
   overflow: hidden;
   z-index: -1;
   object-fit: cover;
@@ -58,19 +89,37 @@ video {
 }
 
 
-
-
 .btn-outline-danger {
   color: #fff;
-  border-color: #ea3057;
+  border-color: #D82948;
   width: 250px;
   height: 48px;
+  font-family: "Arial Rounded MT Bold", "Helvetica Roun ded", Arial, sans-serif;
+  font-size: 24px;
+
 
 
 }
 
+.btn-outline-danger2 {
+  color: #D82948 !important;
+  border-color: #D82948;
+  width: 250px;
+  height: 48px;
+  font-family: "Arial Rounded MT Bold", "Helvetica Rounded", Arial, sans-serif;
+
+  font-size: 24px;
+}
+
+.btn-outline-danger2:hover {
+  color: white !important;
+  background-color: #D82948;
+  border-color: white;
+}
+
 .btn-outline-danger:hover {
-  background-color: #ea3057;
+  background-color: #D82948;
+  border-color: white;
 }
 
 
@@ -81,14 +130,20 @@ video {
 
 }
 
+.img-servicios {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .article {
   font-size: 16px;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Noto Sans', sans-serif;
   margin-top: 16px;
   padding: 5px;
   margin-left: 70px;
 
-  font-weight: 600;
+
   text-align: justify;
   animation: animation 1s ease;
 }
@@ -109,6 +164,11 @@ video {
   }
 
 
+}
+
+.article-h1 {
+
+  font: 32px 'Gilroy', sans-serif;
 }
 
 h1 {
@@ -160,31 +220,35 @@ h1 {
 #servicios {
   height: auto;
   background-color: #F1F1F1;
-  
+
 }
 
 .titulo-servicios {
   margin-top: 40px;
-  margin-bottom:32px;;
-  font-size: 32px;
-  font-family: 'Roboto', sans-serif;
+  margin-bottom: 32px;
+  ;
+  padding: 5px;
+  font: 32px 'Gilroy', sans-serif;
   font-weight: 500;
   background-color: #ea3057;
   color: white;
 }
-.container-servicios{
+
+.container-servicios {
   background-color: white;
-  height: 400px;
+  height: 550px;
   margin-bottom: 48px;
   padding: 10px;
+
+
 }
 
 .servicios {
   text-align: center;
   margin-top: 16px;
-  font-size: 25px;
-  font-family: 'Roboto', sans-serif;
 
+  font: 30px 'Gilroy', sans-serif;
+  font-weight: 500;
 
 }
 
@@ -192,27 +256,38 @@ h1 {
   text-align: center;
   margin-top: 16px;
   margin-bottom: 40px;
+  font-family: "Arial Rounded MT Bold", "Helvetica Rounded", Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 500;
 }
 
 h2 {
   text-align: center;
 }
 
-#contact-form{
+#contact-form {
   height: auto;
 }
-.contact-form-titulo{
+
+.contact-form-titulo {
   margin-top: 32px;
-  font-family: 'Roboto', sans-serif;
+  font: 32px 'Gilroy', sans-serif;
+  background-color: #ea3057;
+  color: white;
+  padding: 5px;
 }
 
-input:focus ~ label, textarea:focus ~ label, input:valid ~ label, textarea:valid ~ label {
+input:focus~label,
+textarea:focus~label,
+input:valid~label,
+textarea:valid~label {
   font-size: 0.75em;
-  color: #FF006F;
+  color: white;
   top: -5px;
   -webkit-transition: all 0.225s ease;
   transition: all 0.225s ease;
 }
+
 .styled-input {
   float: left;
   width: 293px;
@@ -221,14 +296,14 @@ input:focus ~ label, textarea:focus ~ label, input:valid ~ label, textarea:valid
   border-radius: 4px;
 }
 
-@media only screen and (max-width: 768px){
+@media only screen and (max-width: 768px) {
   .styled-input {
-      width:100%;
+    width: 100%;
   }
 }
 
 .styled-input label {
-  color: #FF006F;
+  color: white;
   padding: 1.3rem 30px 1rem 30px;
   position: absolute;
   top: 10px;
@@ -239,7 +314,7 @@ input:focus ~ label, textarea:focus ~ label, input:valid ~ label, textarea:valid
   font-size: 20px;
 }
 
-.styled-input.wide { 
+.styled-input.wide {
   width: 650px;
   max-width: 100%;
 }
@@ -250,16 +325,18 @@ textarea {
   border: 0;
   width: 100%;
   font-size: 1rem;
-  background-color: #2d2d2d;
+  background-color: #4F80FF;
   color: white;
   border-radius: 4px;
 }
 
 input:focus,
-textarea:focus { outline: 0; }
+textarea:focus {
+  outline: 0;
+}
 
-input:focus ~ span,
-textarea:focus ~ span {
+input:focus~span,
+textarea:focus~span {
   width: 100%;
   -webkit-transition: all 0.075s ease;
   transition: all 0.075s ease;
@@ -281,36 +358,45 @@ textarea {
   padding: 7px 35px;
   border-radius: 60px;
   display: inline-block;
-  background-color: #4b8cfb;
+  background-color: #ea3057;
   color: white;
   font-size: 18px;
   cursor: pointer;
-  box-shadow: 0 2px 5px 0 rgba(0,0,0,0.06),
-            0 2px 10px 0 rgba(0,0,0,0.07);
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.06),
+    0 2px 10px 0 rgba(0, 0, 0, 0.07);
   -webkit-transition: all 300ms ease;
   transition: all 300ms ease;
 }
 
 .submit-btn:hover {
   transform: translateY(1px);
-  box-shadow: 0 1px 1px 0 rgba(0,0,0,0.10),
-            0 1px 1px 0 rgba(0,0,0,0.09);
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.10),
+    0 1px 1px 0 rgba(0, 0, 0, 0.09);
 }
 
 @media (max-width: 768px) {
   .submit-btn {
-      width:100%;
-      float: none;
-      text-align:center;
+    width: 100%;
+    float: none;
+    text-align: center;
   }
 }
 
-input[type=checkbox] + label {
-color: #ccc;
-font-style: italic;
-} 
+input[type=checkbox]+label {
+  color: #ccc;
+  font-style: italic;
+}
 
-input[type=checkbox]:checked + label {
-color: #f00;
-font-style: normal;
+input[type=checkbox]:checked+label {
+  color: #f00;
+  font-style: normal;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+a:hover {
+  color: white;
 }
